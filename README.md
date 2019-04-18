@@ -11,11 +11,15 @@ DO NOT INCLUDE 'line' in the name of provider and channel.
 If you do so, you cannnot create the provider nor the channel.
 
 ## Installation
+
+<!-- what i did today, 
+git clone, then git remote add heroku <heroku git link> -->
 ```
 $ git clone git@github.com:hidehiro98/line-bot-101.git
 $ cd line-bot-101
 $ bundle install
 
+below is the heroku configuration thru terminal, you can do it on the heroku dashboard, its the same thing
 $ brew install heroku/brew/heroku
 $ heroku create $YOUR_APP_NAME
 
@@ -35,7 +39,7 @@ $ git push heroku master
 https://www.slideshare.net/HidehiroNagaoka/le-wagon-tokyo-line-bot-101
 
 ## Docs
-### Docs of LINE Messagin API
+### Docs of LINE Messaging API
 - https://developers.line.me/en/docs/messaging-api/building-sample-bot-with-heroku/
 - https://github.com/line/line-bot-sdk-ruby
 

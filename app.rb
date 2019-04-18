@@ -46,12 +46,18 @@ post "/callback" do
           p "#{response.code} #{response.body}"
         end
 
-        if event.message["text"] == "How are you?"
+        if event.message["text"].lowercase == "how are you"
           message = {
             type: "text",
             text: "I am fine, " + user_name
           }
           client.reply_message(event["replyToken"], message)
+        elsif event.message["text"].lowercase == "lol"
+          message = {
+            type: "text",
+            text: "That's very funny, " + user_name
+          }
+          client.reply_message(event["replyToken"], message
         else
           message = {
             type: "text",
